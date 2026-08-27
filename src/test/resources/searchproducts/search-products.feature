@@ -39,3 +39,12 @@ Feature: Search Products API
       message: 'Bad request, search_product parameter is missing in POST request.'
     }
     """
+
+  @negative @search
+  Scenario: Search for a non-existing product
+    Given form field search_product = 'NonExistingProduct12345'
+    When method POST
+    Then status 200
+    And match response.responseCode == 200
+    And match response.products == '#[]'
+    And assert response.products.length == 0
