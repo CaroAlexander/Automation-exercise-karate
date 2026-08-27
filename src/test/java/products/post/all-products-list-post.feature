@@ -1,8 +1,14 @@
-Feature: Post to all products list on automationexerise
+Feature: Post to all products list on automationexercise
 
-  @smoke @products
+  @negative @products
   Scenario: Post to all products list
     Given url "https://automationexercise.com" + "/api/productsList"
-    When method post
+    When method POST
     Then status 200
-    And match response.responseCode == 405
+    And match response ==
+    """
+    {
+      responseCode: 405,
+      message: 'This request method is not supported.'
+    }
+    """

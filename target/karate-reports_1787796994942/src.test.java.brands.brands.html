@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.brands.brands</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2026-08-26 09:15:32 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Get all brands list</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/brands/brands.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Brands API</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">brands</a><a class="badge badge-primary" href="karate-tags.html">smoke</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Get all brands list</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1400</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &quot;https://automationexercise.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">59</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>path &quot;/api/brandsList&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1340</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">21:15:31.992 request:
+1 &gt; GET https://automationexercise.com/api/brandsList
+1 &gt; Host: automationexercise.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:15:32.928 response time in milliseconds: 932
+1 &lt; 200
+1 &lt; Date: Thu, 27 Aug 2026 02:11:13 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; vary: Accept,Cookie,Accept-Encoding
+1 &lt; referrer-policy: same-origin
+1 &lt; x-frame-options: DENY
+1 &lt; x-content-type-options: nosniff
+1 &lt; allow: GET, POST, DELETE, PUT, OPTIONS
+1 &lt; x-powered-by: Phusion Passenger(R) 6.1.8
+1 &lt; status: 200 OK
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=9,cfOrigin;dur=335
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=xuMNrK5KZkGV7epmSd391bXfVXvvpUzkmsLBP1DAZuvj7l2UR3agChS%2FwwIvGkIyIXuuNzr3HUyCTOwAD9r8uBFe1ntuVFbtqoBB2ZofruaNi%2FO3n%2FuO7rzVFPQ1Wsic89dG9gEjq2FF&quot;}]}
+1 &lt; CF-RAY: a3178b59ee68571f-MIA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;responseCode&quot;: 200, &quot;brands&quot;: [{&quot;id&quot;: 1, &quot;brand&quot;: &quot;Polo&quot;}, {&quot;id&quot;: 2, &quot;brand&quot;: &quot;H&amp;M&quot;}, {&quot;id&quot;: 3, &quot;brand&quot;: &quot;Madame&quot;}, {&quot;id&quot;: 4, &quot;brand&quot;: &quot;Madame&quot;}, {&quot;id&quot;: 5, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;}, {&quot;id&quot;: 6, &quot;brand&quot;: &quot;H&amp;M&quot;}, {&quot;id&quot;: 7, &quot;brand&quot;: &quot;Madame&quot;}, {&quot;id&quot;: 8, &quot;brand&quot;: &quot;Polo&quot;}, {&quot;id&quot;: 11, &quot;brand&quot;: &quot;Babyhug&quot;}, {&quot;id&quot;: 12, &quot;brand&quot;: &quot;Babyhug&quot;}, {&quot;id&quot;: 13, &quot;brand&quot;: &quot;Allen Solly Junior&quot;}, {&quot;id&quot;: 14, &quot;brand&quot;: &quot;Kookie Kids&quot;}, {&quot;id&quot;: 15, &quot;brand&quot;: &quot;Babyhug&quot;}, {&quot;id&quot;: 16, &quot;brand&quot;: &quot;Babyhug&quot;}, {&quot;id&quot;: 18, &quot;brand&quot;: &quot;Kookie Kids&quot;}, {&quot;id&quot;: 19, &quot;brand&quot;: &quot;Allen Solly Junior&quot;}, {&quot;id&quot;: 20, &quot;brand&quot;: &quot;Kookie Kids&quot;}, {&quot;id&quot;: 21, &quot;brand&quot;: &quot;Biba&quot;}, {&quot;id&quot;: 22, &quot;brand&quot;: &quot;Biba&quot;}, {&quot;id&quot;: 23, &quot;brand&quot;: &quot;Biba&quot;}, {&quot;id&quot;: 24, &quot;brand&quot;: &quot;Allen Solly Junior&quot;}, {&quot;id&quot;: 28, &quot;brand&quot;: &quot;H&amp;M&quot;}, {&quot;id&quot;: 29, &quot;brand&quot;: &quot;Polo&quot;}, {&quot;id&quot;: 30, &quot;brand&quot;: &quot;Polo&quot;}, {&quot;id&quot;: 31, &quot;brand&quot;: &quot;H&amp;M&quot;}, {&quot;id&quot;: 33, &quot;brand&quot;: &quot;Polo&quot;}, {&quot;id&quot;: 35, &quot;brand&quot;: &quot;H&amp;M&quot;}, {&quot;id&quot;: 37, &quot;brand&quot;: &quot;Polo&quot;}, {&quot;id&quot;: 38, &quot;brand&quot;: &quot;Madame&quot;}, {&quot;id&quot;: 39, &quot;brand&quot;: &quot;Biba&quot;}, {&quot;id&quot;: 40, &quot;brand&quot;: &quot;Biba&quot;}, {&quot;id&quot;: 41, &quot;brand&quot;: &quot;Madame&quot;}, {&quot;id&quot;: 42, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;}, {&quot;id&quot;: 43, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.products.get.all-products-list-get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2026-08-26 08:59:16 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Get all products</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/products/get/all-products-list-get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get all products list on automationexerise</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">smoke</a><a class="badge badge-primary" href="karate-tags.html">products</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Get all products</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1331</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://automationexercise.com&quot; + &quot;/api/productsList&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">68</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1216</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">20:59:16.045 request:
+1 &gt; GET https://automationexercise.com/api/productsList
+1 &gt; Host: automationexercise.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.18)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:59:16.873 response time in milliseconds: 826
+1 &lt; 200
+1 &lt; Date: Thu, 27 Aug 2026 01:54:57 GMT
+1 &lt; Content-Type: text/html; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; vary: Accept,Cookie,Accept-Encoding
+1 &lt; referrer-policy: same-origin
+1 &lt; x-frame-options: DENY
+1 &lt; x-content-type-options: nosniff
+1 &lt; allow: GET, POST, DELETE, PUT, OPTIONS
+1 &lt; x-powered-by: Phusion Passenger(R) 6.1.8
+1 &lt; status: 200 OK
+1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; cf-cache-status: DYNAMIC
+1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
+1 &lt; Server-Timing: cfEdge;dur=8,cfOrigin;dur=395
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=NFaBx75Ls7YbSGHX3eQbtJvg8EPCZX1WvNn%2BpEWJi8h0bEaQm1gk%2BPqCmxccds4Cwh3%2FeLExgETZ%2FI4447uttWU832X5HUCXXL0Az4qhol%2F77j6%2Bv1joeTht7ygegpcI8XMaaJY7B1v%2F&quot;}]}
+1 &lt; CF-RAY: a31773851b0985c3-MIA
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400
+{&quot;responseCode&quot;: 200, &quot;products&quot;: [{&quot;id&quot;: 1, &quot;name&quot;: &quot;Blue Top&quot;, &quot;price&quot;: &quot;Rs. 500&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 2, &quot;name&quot;: &quot;Men Tshirt&quot;, &quot;price&quot;: &quot;Rs. 400&quot;, &quot;brand&quot;: &quot;H&amp;M&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Tshirts&quot;}}, {&quot;id&quot;: 3, &quot;name&quot;: &quot;Sleeveless Dress&quot;, &quot;price&quot;: &quot;Rs. 1000&quot;, &quot;brand&quot;: &quot;Madame&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 4, &quot;name&quot;: &quot;Stylish Dress&quot;, &quot;price&quot;: &quot;Rs. 1500&quot;, &quot;brand&quot;: &quot;Madame&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 5, &quot;name&quot;: &quot;Winter Top&quot;, &quot;price&quot;: &quot;Rs. 600&quot;, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 6, &quot;name&quot;: &quot;Summer White Top&quot;, &quot;price&quot;: &quot;Rs. 400&quot;, &quot;brand&quot;: &quot;H&amp;M&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 7, &quot;name&quot;: &quot;Madame Top For Women&quot;, &quot;price&quot;: &quot;Rs. 1000&quot;, &quot;brand&quot;: &quot;Madame&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 8, &quot;name&quot;: &quot;Fancy Green Top&quot;, &quot;price&quot;: &quot;Rs. 700&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 11, &quot;name&quot;: &quot;Sleeves Printed Top - White&quot;, &quot;price&quot;: &quot;Rs. 499&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 12, &quot;name&quot;: &quot;Half Sleeves Top Schiffli Detailing - Pink&quot;, &quot;price&quot;: &quot;Rs. 359&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 13, &quot;name&quot;: &quot;Frozen Tops For Kids&quot;, &quot;price&quot;: &quot;Rs. 278&quot;, &quot;brand&quot;: &quot;Allen Solly Junior&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 14, &quot;name&quot;: &quot;Full Sleeves Top Cherry - Pink&quot;, &quot;price&quot;: &quot;Rs. 679&quot;, &quot;brand&quot;: &quot;Kookie Kids&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 15, &quot;name&quot;: &quot;Printed Off Shoulder Top - White&quot;, &quot;price&quot;: &quot;Rs. 315&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 16, &quot;name&quot;: &quot;Sleeves Top and Short - Blue &amp; Pink&quot;, &quot;price&quot;: &quot;Rs. 478&quot;, &quot;brand&quot;: &quot;Babyhug&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 18, &quot;name&quot;: &quot;Little Girls Mr. Panda Shirt&quot;, &quot;price&quot;: &quot;Rs. 1200&quot;, &quot;brand&quot;: &quot;Kookie Kids&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 19, &quot;name&quot;: &quot;Sleeveless Unicorn Patch Gown - Pink&quot;, &quot;price&quot;: &quot;Rs. 1050&quot;, &quot;brand&quot;: &quot;Allen Solly Junior&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 20, &quot;name&quot;: &quot;Cotton Mull Embroidered Dress&quot;, &quot;price&quot;: &quot;Rs. 1190&quot;, &quot;brand&quot;: &quot;Kookie Kids&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 21, &quot;name&quot;: &quot;Blue Cotton Indie Mickey Dress&quot;, &quot;price&quot;: &quot;Rs. 1530&quot;, &quot;brand&quot;: &quot;Biba&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 22, &quot;name&quot;: &quot;Long Maxi Tulle Fancy Dress Up Outfits -Pink&quot;, &quot;price&quot;: &quot;Rs. 1600&quot;, &quot;brand&quot;: &quot;Biba&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 23, &quot;name&quot;: &quot;Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi&quot;, &quot;price&quot;: &quot;Rs. 1100&quot;, &quot;brand&quot;: &quot;Biba&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 24, &quot;name&quot;: &quot;Colour Blocked Shirt \u2013 Sky Blue&quot;, &quot;price&quot;: &quot;Rs. 849&quot;, &quot;brand&quot;: &quot;Allen Solly Junior&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Kids&quot;}, &quot;category&quot;: &quot;Tops &amp; Shirts&quot;}}, {&quot;id&quot;: 28, &quot;name&quot;: &quot;Pure Cotton V-Neck T-Shirt&quot;, &quot;price&quot;: &quot;Rs. 1299&quot;, &quot;brand&quot;: &quot;H&amp;M&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Tshirts&quot;}}, {&quot;id&quot;: 29, &quot;name&quot;: &quot;Green Side Placket Detail T-Shirt&quot;, &quot;price&quot;: &quot;Rs. 1000&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Tshirts&quot;}}, {&quot;id&quot;: 30, &quot;name&quot;: &quot;Premium Polo T-Shirts&quot;, &quot;price&quot;: &quot;Rs. 1500&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Tshirts&quot;}}, {&quot;id&quot;: 31, &quot;name&quot;: &quot;Pure Cotton Neon Green Tshirt&quot;, &quot;price&quot;: &quot;Rs. 850&quot;, &quot;brand&quot;: &quot;H&amp;M&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Tshirts&quot;}}, {&quot;id&quot;: 33, &quot;name&quot;: &quot;Soft Stretch Jeans&quot;, &quot;price&quot;: &quot;Rs. 799&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Jeans&quot;}}, {&quot;id&quot;: 35, &quot;name&quot;: &quot;Regular Fit Straight Jeans&quot;, &quot;price&quot;: &quot;Rs. 1200&quot;, &quot;brand&quot;: &quot;H&amp;M&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Jeans&quot;}}, {&quot;id&quot;: 37, &quot;name&quot;: &quot;Grunt Blue Slim Fit Jeans&quot;, &quot;price&quot;: &quot;Rs. 1400&quot;, &quot;brand&quot;: &quot;Polo&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Jeans&quot;}}, {&quot;id&quot;: 38, &quot;name&quot;: &quot;Rose Pink Embroidered Maxi Dress&quot;, &quot;price&quot;: &quot;Rs. 2300&quot;, &quot;brand&quot;: &quot;Madame&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Dress&quot;}}, {&quot;id&quot;: 39, &quot;name&quot;: &quot;Cotton Silk Hand Block Print Saree&quot;, &quot;price&quot;: &quot;Rs. 3000&quot;, &quot;brand&quot;: &quot;Biba&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Saree&quot;}}, {&quot;id&quot;: 40, &quot;name&quot;: &quot;Rust Red Linen Saree&quot;, &quot;price&quot;: &quot;Rs. 3500&quot;, &quot;brand&quot;: &quot;Biba&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Saree&quot;}}, {&quot;id&quot;: 41, &quot;name&quot;: &quot;Beautiful Peacock Blue Cotton Linen Saree&quot;, &quot;price&quot;: &quot;Rs. 5000&quot;, &quot;brand&quot;: &quot;Madame&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Saree&quot;}}, {&quot;id&quot;: 42, &quot;name&quot;: &quot;Lace Top For Women&quot;, &quot;price&quot;: &quot;Rs. 1400&quot;, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Women&quot;}, &quot;category&quot;: &quot;Tops&quot;}}, {&quot;id&quot;: 43, &quot;name&quot;: &quot;GRAPHIC DESIGN MEN T SHIRT - BLUE&quot;, &quot;price&quot;: &quot;Rs. 1389&quot;, &quot;brand&quot;: &quot;Mast &amp; Harbour&quot;, &quot;category&quot;: {&quot;usertype&quot;: {&quot;usertype&quot;: &quot;Men&quot;}, &quot;category&quot;: &quot;Tshirts&quot;}}]}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.responseCode == 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">29</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.products == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert response.products.length &gt; 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">13</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref failed">11</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match each response.products contains</span>
+      </div>
+    </div>
+    <div class="time-cell failed">4</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.11">{
+  idd: &#39;#number&#39;,
+  naame: &#39;#string&#39;,
+  price: &#39;#string&#39;,
+  brand: &#39;#string&#39;,
+  category: {
+    usertype: {
+      usertype: &#39;#string&#39;
+    },
+    category: &#39;#string&#39;
+  }
+}</div>
+
+  
+
+  <div class="preformatted" data-parent="0.11">20:59:16.937 src/test/java/products/get/all-products-list-get.feature:11
+And match each response.products contains
+&quot;&quot;&quot;
+{
+  idd: &#39;#number&#39;,
+  naame: &#39;#string&#39;,
+  price: &#39;#string&#39;,
+  brand: &#39;#string&#39;,
+  category: {
+    usertype: {
+      usertype: &#39;#string&#39;
+    },
+    category: &#39;#string&#39;
+  }
+}
+&quot;&quot;&quot;
+match failed: EACH_CONTAINS
+  $ | match each failed at index 0 (LIST:MAP)
+  [{&quot;id&quot;:1,&quot;name&quot;:&quot;Blue Top&quot;,&quot;price&quot;:&quot;Rs. 500&quot;,&quot;brand&quot;:&quot;Polo&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Tops&quot;}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Men Tshirt&quot;,&quot;price&quot;:&quot;Rs. 400&quot;,&quot;brand&quot;:&quot;H&amp;M&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Tshirts&quot;}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Sleeveless Dress&quot;,&quot;price&quot;:&quot;Rs. 1000&quot;,&quot;brand&quot;:&quot;Madame&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Stylish Dress&quot;,&quot;price&quot;:&quot;Rs. 1500&quot;,&quot;brand&quot;:&quot;Madame&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Winter Top&quot;,&quot;price&quot;:&quot;Rs. 600&quot;,&quot;brand&quot;:&quot;Mast &amp; Harbour&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Tops&quot;}},{&quot;id&quot;:6,&quot;name&quot;:&quot;Summer White Top&quot;,&quot;price&quot;:&quot;Rs. 400&quot;,&quot;brand&quot;:&quot;H&amp;M&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Tops&quot;}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Madame Top For Women&quot;,&quot;price&quot;:&quot;Rs. 1000&quot;,&quot;brand&quot;:&quot;Madame&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Tops&quot;}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Fancy Green Top&quot;,&quot;price&quot;:&quot;Rs. 700&quot;,&quot;brand&quot;:&quot;Polo&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Tops&quot;}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Sleeves Printed Top - White&quot;,&quot;price&quot;:&quot;Rs. 499&quot;,&quot;brand&quot;:&quot;Babyhug&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Tops &amp; Shirts&quot;}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Half Sleeves Top Schiffli Detailing - Pink&quot;,&quot;price&quot;:&quot;Rs. 359&quot;,&quot;brand&quot;:&quot;Babyhug&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Tops &amp; Shirts&quot;}},{&quot;id&quot;:13,&quot;name&quot;:&quot;Frozen Tops For Kids&quot;,&quot;price&quot;:&quot;Rs. 278&quot;,&quot;brand&quot;:&quot;Allen Solly Junior&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Tops &amp; Shirts&quot;}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Full Sleeves Top Cherry - Pink&quot;,&quot;price&quot;:&quot;Rs. 679&quot;,&quot;brand&quot;:&quot;Kookie Kids&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Tops &amp; Shirts&quot;}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Printed Off Shoulder Top - White&quot;,&quot;price&quot;:&quot;Rs. 315&quot;,&quot;brand&quot;:&quot;Babyhug&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Tops &amp; Shirts&quot;}},{&quot;id&quot;:16,&quot;name&quot;:&quot;Sleeves Top and Short - Blue &amp; Pink&quot;,&quot;price&quot;:&quot;Rs. 478&quot;,&quot;brand&quot;:&quot;Babyhug&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Little Girls Mr. Panda Shirt&quot;,&quot;price&quot;:&quot;Rs. 1200&quot;,&quot;brand&quot;:&quot;Kookie Kids&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Tops &amp; Shirts&quot;}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Sleeveless Unicorn Patch Gown - Pink&quot;,&quot;price&quot;:&quot;Rs. 1050&quot;,&quot;brand&quot;:&quot;Allen Solly Junior&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:20,&quot;name&quot;:&quot;Cotton Mull Embroidered Dress&quot;,&quot;price&quot;:&quot;Rs. 1190&quot;,&quot;brand&quot;:&quot;Kookie Kids&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:21,&quot;name&quot;:&quot;Blue Cotton Indie Mickey Dress&quot;,&quot;price&quot;:&quot;Rs. 1530&quot;,&quot;brand&quot;:&quot;Biba&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:22,&quot;name&quot;:&quot;Long Maxi Tulle Fancy Dress Up Outfits -Pink&quot;,&quot;price&quot;:&quot;Rs. 1600&quot;,&quot;brand&quot;:&quot;Biba&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:23,&quot;name&quot;:&quot;Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi&quot;,&quot;price&quot;:&quot;Rs. 1100&quot;,&quot;brand&quot;:&quot;Biba&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:24,&quot;name&quot;:&quot;Colour Blocked Shirt \u2013 Sky Blue&quot;,&quot;price&quot;:&quot;Rs. 849&quot;,&quot;brand&quot;:&quot;Allen Solly Junior&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Kids&quot;},&quot;category&quot;:&quot;Tops &amp; Shirts&quot;}},{&quot;id&quot;:28,&quot;name&quot;:&quot;Pure Cotton V-Neck T-Shirt&quot;,&quot;price&quot;:&quot;Rs. 1299&quot;,&quot;brand&quot;:&quot;H&amp;M&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Tshirts&quot;}},{&quot;id&quot;:29,&quot;name&quot;:&quot;Green Side Placket Detail T-Shirt&quot;,&quot;price&quot;:&quot;Rs. 1000&quot;,&quot;brand&quot;:&quot;Polo&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Tshirts&quot;}},{&quot;id&quot;:30,&quot;name&quot;:&quot;Premium Polo T-Shirts&quot;,&quot;price&quot;:&quot;Rs. 1500&quot;,&quot;brand&quot;:&quot;Polo&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Tshirts&quot;}},{&quot;id&quot;:31,&quot;name&quot;:&quot;Pure Cotton Neon Green Tshirt&quot;,&quot;price&quot;:&quot;Rs. 850&quot;,&quot;brand&quot;:&quot;H&amp;M&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Tshirts&quot;}},{&quot;id&quot;:33,&quot;name&quot;:&quot;Soft Stretch Jeans&quot;,&quot;price&quot;:&quot;Rs. 799&quot;,&quot;brand&quot;:&quot;Polo&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Jeans&quot;}},{&quot;id&quot;:35,&quot;name&quot;:&quot;Regular Fit Straight Jeans&quot;,&quot;price&quot;:&quot;Rs. 1200&quot;,&quot;brand&quot;:&quot;H&amp;M&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Jeans&quot;}},{&quot;id&quot;:37,&quot;name&quot;:&quot;Grunt Blue Slim Fit Jeans&quot;,&quot;price&quot;:&quot;Rs. 1400&quot;,&quot;brand&quot;:&quot;Polo&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Jeans&quot;}},{&quot;id&quot;:38,&quot;name&quot;:&quot;Rose Pink Embroidered Maxi Dress&quot;,&quot;price&quot;:&quot;Rs. 2300&quot;,&quot;brand&quot;:&quot;Madame&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Dress&quot;}},{&quot;id&quot;:39,&quot;name&quot;:&quot;Cotton Silk Hand Block Print Saree&quot;,&quot;price&quot;:&quot;Rs. 3000&quot;,&quot;brand&quot;:&quot;Biba&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Saree&quot;}},{&quot;id&quot;:40,&quot;name&quot;:&quot;Rust Red Linen Saree&quot;,&quot;price&quot;:&quot;Rs. 3500&quot;,&quot;brand&quot;:&quot;Biba&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Saree&quot;}},{&quot;id&quot;:41,&quot;name&quot;:&quot;Beautiful Peacock Blue Cotton Linen Saree&quot;,&quot;price&quot;:&quot;Rs. 5000&quot;,&quot;brand&quot;:&quot;Madame&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Saree&quot;}},{&quot;id&quot;:42,&quot;name&quot;:&quot;Lace Top For Women&quot;,&quot;price&quot;:&quot;Rs. 1400&quot;,&quot;brand&quot;:&quot;Mast &amp; Harbour&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Tops&quot;}},{&quot;id&quot;:43,&quot;name&quot;:&quot;GRAPHIC DESIGN MEN T SHIRT - BLUE&quot;,&quot;price&quot;:&quot;Rs. 1389&quot;,&quot;brand&quot;:&quot;Mast &amp; Harbour&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Men&quot;},&quot;category&quot;:&quot;Tshirts&quot;}}]
+  {&quot;idd&quot;:&quot;#number&quot;,&quot;naame&quot;:&quot;#string&quot;,&quot;price&quot;:&quot;#string&quot;,&quot;brand&quot;:&quot;#string&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;#string&quot;},&quot;category&quot;:&quot;#string&quot;}}
+
+    $[0] | actual does not contain expected | actual does not contain key - &#39;idd&#39; (MAP:MAP)
+    {&quot;id&quot;:1,&quot;name&quot;:&quot;Blue Top&quot;,&quot;price&quot;:&quot;Rs. 500&quot;,&quot;brand&quot;:&quot;Polo&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;Women&quot;},&quot;category&quot;:&quot;Tops&quot;}}
+    {&quot;price&quot;:&quot;#string&quot;,&quot;brand&quot;:&quot;#string&quot;,&quot;category&quot;:{&quot;usertype&quot;:{&quot;usertype&quot;:&quot;#string&quot;},&quot;category&quot;:&quot;#string&quot;},&quot;idd&quot;:&quot;#number&quot;,&quot;naame&quot;:&quot;#string&quot;}
+
+
+src/test/java/products/get/all-products-list-get.feature:11
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

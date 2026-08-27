@@ -18,3 +18,7 @@ h
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+d
+4src/test/java/searchproducts/search-products.feature,b\b\bb5c9929d143c3d687e5a4e7fffa5611c3e7fa8f
+P
+ src/test/java/auth/login.feature,5\e\5eae18d6ed541fd8619b2763f0fc6b9aa0776bab
