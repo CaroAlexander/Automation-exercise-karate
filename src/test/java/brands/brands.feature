@@ -6,6 +6,7 @@ Feature: Brands API
 
     @smoke @brands @API3
     Scenario: Get all brands list
+      * def jsonResponse = read('../data/all_brands_list.json')
       When method GET
       Then status 200
       And match response.responseCode == 200
@@ -21,6 +22,7 @@ Feature: Brands API
       * def ids = karate.map(response.brands, x => x.id)
       * def uniqueIds = karate.distinct(ids)
       * assert uniqueIds.length == ids.length
+      And match $ == jsonResponse
 
   @negative @brands @API4
   Scenario: PUT method is not supported for brands list

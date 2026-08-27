@@ -2,41 +2,12 @@ Feature: Users API
 
   Background:
     * url "https://automationexercise.com"
-    * def timestamp = java.lang.System.currentTimeMillis()
-    * def userEmail = 'qa.automation.' + timestamp + '@test.com'
-    * def userPassword = 'Password123'
 
   @smoke @users @e2e @API11 @API12 @API13 @API14
   Scenario: Create, get, update and delete user account
 
     # API 11 - Create Account
-    Given path "/api/createAccount"
-    And form field name = "QA Automation"
-    And form field email = userEmail
-    And form field password = userPassword
-    And form field title = "Mr"
-    And form field birth_date = "10"
-    And form field birth_month = "5"
-    And form field birth_year = "1995"
-    And form field firstname = "QA"
-    And form field lastname = "Automation"
-    And form field company = "Automation Testing"
-    And form field address1 = "Test Address"
-    And form field address2 = "Test Address 2"
-    And form field country = "Colombia"
-    And form field zipcode = "110111"
-    And form field state = "Cundinamarca"
-    And form field city = "Bogota"
-    And form field mobile_number = "8142270421"
-    When method POST
-    Then status 200
-    And match response ==
-    """
-    {
-      responseCode: 201,
-      message: 'User created!'
-    }
-    """
+    * call read("../utils/user_post_snippets.feature@CreateUser")
 
     # API 14 - Get User Account Detail by Email
     Given path "/api/getUserDetailByEmail"
@@ -53,24 +24,15 @@ Feature: Users API
     """
 
     # API 13 - Update Account
+    * copy updatedUser = user
+    * set updatedUser.name = 'QA Automation Updated'
+    * set updatedUser.company = 'Automation Testing Updated'
+    * set updatedUser.address1 = 'Updated Address'
+    * set updatedUser.address2 = 'Updated Address 2'
+    * set updatedUser.mobile_number = '8142270422'
+
     Given path "/api/updateAccount"
-    And form field name = "QA Automation Updated"
-    And form field email = userEmail
-    And form field password = userPassword
-    And form field title = "Mr"
-    And form field birth_date = "10"
-    And form field birth_month = "5"
-    And form field birth_year = "1995"
-    And form field firstname = "QA"
-    And form field lastname = "Automation"
-    And form field company = "Automation Testing Updated"
-    And form field address1 = "Updated Address"
-    And form field address2 = "Updated Address 2"
-    And form field country = "Colombia"
-    And form field zipcode = "110111"
-    And form field state = "Cundinamarca"
-    And form field city = "Bogota"
-    And form field mobile_number = "8142270422"
+    And form fields updatedUser
     When method PUT
     Then status 200
     And match response ==
@@ -94,6 +56,10 @@ Feature: Users API
       email: '#(userEmail)'
     }
     """
+    And match response.user.company == 'Automation Testing Updated'
+    And match $.user.address1 == 'Updated Address'
+    And match response.user.mobile_number == '#notpresent'
+
 
     # API 12 - Delete Account
     Given path "/api/deleteAccount"

@@ -31,6 +31,22 @@ Feature: Verify Login API
     }
     """
 
+  @negative @auth @API8
+  Scenario Outline: Verify login with missing parameters
+    * def credentials = <credentials>
+
+    Given form fields credentials
+    When method POST
+    Then status 200
+    And match response.responseCode == 400
+    And match response.message == 'Bad request, email or password parameter is missing in POST request.'
+
+    Examples:
+      | credentials                   |
+      | { password: 'Password123' }   |
+      | { email: 'invalid@test.com' } |
+      | {}                            |
+
   @negative @auth @API9
   Scenario: DELETE method is not supported for verify login
     When method DELETE
@@ -44,15 +60,17 @@ Feature: Verify Login API
     """
 
   @negative @auth @API10
-  Scenario: Verify login with invalid credentials
-    Given form field email = 'invaliduser@test.com'
-    And form field password = 'invalidPassword123'
+  Scenario Outline: Verify login with invalid credentials
+
+    Given form field email = '<email>'
+    And form field password = '<password>'
     When method POST
     Then status 200
-    And match response ==
-    """
-    {
-      responseCode: 404,
-      message: 'User not found!'
-    }
-    """
+    And match response.responseCode == 404
+    And match response.message == 'User not found!'
+
+    Examples:
+      | email                  | password          |
+      | invalid@test.com       | Password123       |
+      | nonexistent@test.com   | WrongPassword     |
+      | qa.invalid@test.com    | InvalidPassword   |
