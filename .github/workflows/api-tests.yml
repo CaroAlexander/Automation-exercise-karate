@@ -41,6 +41,6 @@ jobs:
         with:
           name: api-automation-reports
           path: |
-            target/karate-reports/
+            build/karate-reports/
             build/cucumber-html-reports/
           if-no-files-found: warn
