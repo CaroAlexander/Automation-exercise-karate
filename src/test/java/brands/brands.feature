@@ -4,8 +4,8 @@ Feature: Brands API
     * url "https://automationexercise.com"
     * path "/api/brandsList"
 
-    @smoke @brands
-      Scenario: Get all brands list
+    @smoke @brands @API3
+    Scenario: Get all brands list
       When method GET
       Then status 200
       And match response.responseCode == 200
@@ -22,7 +22,7 @@ Feature: Brands API
       * def uniqueIds = karate.distinct(ids)
       * assert uniqueIds.length == ids.length
 
-  @negative @brands
+  @negative @brands @API4
   Scenario: PUT method is not supported for brands list
     When method PUT
     Then status 200

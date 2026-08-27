@@ -1,6 +1,6 @@
 Feature: Post to all products list on automationexercise
 
-  @negative @products
+  @negative @products @API2
   Scenario: Post to all products list
     Given url "https://automationexercise.com" + "/api/productsList"
     When method POST

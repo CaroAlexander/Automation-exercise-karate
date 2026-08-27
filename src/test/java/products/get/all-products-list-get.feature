@@ -1,6 +1,6 @@
 Feature: Get all products list on automationexercise
 
-  @smoke @products
+  @smoke @products @API1
   Scenario: Get all products
     Given url "https://automationexercise.com" + "/api/productsList"
     When method get

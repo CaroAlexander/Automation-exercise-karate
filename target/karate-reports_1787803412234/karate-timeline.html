@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/auth\/login[1:8]","start":1787803059273,"end":1787803060747,"title":"src\/test\/java\/auth\/login[1:8] 22:57:39.273-22:57:40.747 Verify login with valid credentials"},{"id":2,"group":1,"content":"src\/test\/java\/auth\/login[2:22]","start":1787803060753,"end":1787803061378,"title":"src\/test\/java\/auth\/login[2:22] 22:57:40.753-22:57:41.378 Verify login without email parameter"},{"id":3,"group":1,"content":"src\/test\/java\/auth\/login[3:35]","start":1787803061392,"end":1787803062019,"title":"src\/test\/java\/auth\/login[3:35] 22:57:41.392-22:57:42.019 DELETE method is not supported for verify login"},{"id":4,"group":1,"content":"src\/test\/java\/auth\/login[4:47]","start":1787803062032,"end":1787803062383,"title":"src\/test\/java\/auth\/login[4:47] 22:57:42.032-22:57:42.383 Verify login with invalid credentials"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
