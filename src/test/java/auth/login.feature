@@ -1,13 +1,13 @@
 Feature: Verify Login API
 
   Background:
-    * url "https://automationexercise.com"
+    * url baseUrl
     * path "/api/verifyLogin"
 
   @smoke @auth @API7
   Scenario: Verify login with valid credentials
     Given form field email = 'alex.qa.test@example.com'
-    And form field password = 'Password123'
+    And form field password = defaultPassword
     When method POST
     Then status 200
     And match response ==
@@ -43,7 +43,7 @@ Feature: Verify Login API
 
     Examples:
       | credentials                   |
-      | { password: 'Password123' }   |
+      | { password: defaultPassword } |
       | { email: 'invalid@test.com' } |
       | {}                            |
 
@@ -63,14 +63,14 @@ Feature: Verify Login API
   Scenario Outline: Verify login with invalid credentials
 
     Given form field email = '<email>'
-    And form field password = '<password>'
+    And form field password = <password>
     When method POST
     Then status 200
     And match response.responseCode == 404
     And match response.message == 'User not found!'
 
     Examples:
-      | email                  | password          |
-      | invalid@test.com       | Password123       |
-      | nonexistent@test.com   | WrongPassword     |
-      | qa.invalid@test.com    | InvalidPassword   |
+      | email                | password          |
+      | invalid@test.com     | defaultPassword   |
+      | nonexistent@test.com | 'WrongPassword'   |
+      | qa.invalid@test.com  | 'InvalidPassword' |

@@ -1,7 +1,7 @@
 Feature: Brands API
 
   Background:
-    * url "https://automationexercise.com"
+    * url baseUrl
     * path "/api/brandsList"
 
     @smoke @brands @API3

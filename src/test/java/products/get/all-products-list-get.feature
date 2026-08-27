@@ -1,8 +1,11 @@
 Feature: Get all products list on automationexercise
 
+  Background:
+    * url baseUrl
+    * path "/api/productsList"
+
   @smoke @products @API1
   Scenario: Get all products
-    Given url "https://automationexercise.com" + "/api/productsList"
     When method get
     Then status 200
     And match response.responseCode == 200

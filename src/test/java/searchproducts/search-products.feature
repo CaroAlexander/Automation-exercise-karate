@@ -1,7 +1,7 @@
 Feature: Search Products API
 
   Background:
-    * url "https://automationexercise.com"
+    * url baseUrl
     * path "/api/searchProduct"
 
   @smoke @search @API5

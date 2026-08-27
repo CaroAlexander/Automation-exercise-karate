@@ -1,7 +1,7 @@
 Feature: Users API
 
   Background:
-    * url "https://automationexercise.com"
+    * url baseUrl
 
   @smoke @users @e2e @API11 @API12 @API13 @API14
   Scenario: Create, get, update and delete user account
@@ -64,7 +64,7 @@ Feature: Users API
     # API 12 - Delete Account
     Given path "/api/deleteAccount"
     And form field email = userEmail
-    And form field password = userPassword
+    And form field password = defaultPassword
     When method DELETE
     Then status 200
     And match response ==

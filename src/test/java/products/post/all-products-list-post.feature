@@ -1,8 +1,11 @@
 Feature: Post to all products list on automationexercise
 
+  Background:
+    * url baseUrl
+    * path "/api/productsList"
+
   @negative @products @API2
   Scenario: Post to all products list
-    Given url "https://automationexercise.com" + "/api/productsList"
     When method POST
     Then status 200
     And match response ==
