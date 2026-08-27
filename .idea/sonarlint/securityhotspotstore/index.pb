@@ -15,3 +15,6 @@ j
 :src/test/java/products/post/all-products-list-post.feature,b\2\b25cc6eb14e04e5b5b99fcf326a4e23dc5309cb6
 h
 8src/test/java/products/get/all-products-list-get.feature,c\8\c80c83ef230eed2d0384ccb2276c8ec7a122e9a1
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
