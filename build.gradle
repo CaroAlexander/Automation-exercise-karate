@@ -15,6 +15,11 @@ dependencies {
 
 test{
     useJUnitPlatform()
+
+    include '**/ManagementTest.class'
+
+    systemProperty "karate.options", System.properties.getProperty("karate.options")
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
 }
 
 sourceSets {

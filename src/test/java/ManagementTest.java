@@ -16,6 +16,8 @@ public class ManagementTest {
     void testParallel(){
         Results results = Runner.path("classpath:").outputCucumberJson(true).tags("~@ignore").parallel(4);
         generateReport(results.getReportDir());
+
+        assert results.getFailCount() == 0 : results.getErrorMessages();
     }
 
     public static void generateReport(String karateOutputPath){
