@@ -22,3 +22,7 @@ d
 4src/test/java/searchproducts/search-products.feature,b\b\bb5c9929d143c3d687e5a4e7fffa5611c3e7fa8f
 P
  src/test/java/auth/login.feature,5\e\5eae18d6ed541fd8619b2763f0fc6b9aa0776bab
+Q
+!src/test/java/users/users.feature,c\2\c2cd0ac63c3faa1690be475490869564d7c3988c
+Y
+)target/karate-reports/karate-summary.html,d\d\dd740bc54356931a6fcf1a1191eb7e73350b161d

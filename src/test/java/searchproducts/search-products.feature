@@ -4,9 +4,9 @@ Feature: Search Products API
     * url "https://automationexercise.com"
     * path "/api/searchProduct"
 
-  @smoke @search
+  @smoke @search @API5
   Scenario: Search product successfully
-    Given form field search_product = 'tahoraop'
+    Given form field search_product = 'Top'
     When method POST
     Then status 200
     And match response.responseCode == 200
@@ -28,7 +28,7 @@ Feature: Search Products API
     }
     """
 
-  @negative @search
+  @negative @search @API6
   Scenario: Search product without search_product parameter
     When method POST
     Then status 200

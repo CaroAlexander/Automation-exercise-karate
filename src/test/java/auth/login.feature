@@ -4,10 +4,10 @@ Feature: Verify Login API
     * url "https://automationexercise.com"
     * path "/api/verifyLogin"
 
-  @smoke @auth
+  @smoke @auth @API7
   Scenario: Verify login with valid credentials
-    Given form field email = 'VALID_EMAIL'
-    And form field password = 'VALID_PASSWORD'
+    Given form field email = 'alex.qa.test@example.com'
+    And form field password = 'Password123'
     When method POST
     Then status 200
     And match response ==
@@ -18,7 +18,7 @@ Feature: Verify Login API
     }
     """
 
-  @negative @auth
+  @negative @auth @API8
   Scenario: Verify login without email parameter
     Given form field password = 'VALID_PASSWORD'
     When method POST
@@ -31,7 +31,7 @@ Feature: Verify Login API
     }
     """
 
-  @negative @auth
+  @negative @auth @API9
   Scenario: DELETE method is not supported for verify login
     When method DELETE
     Then status 200
@@ -43,7 +43,7 @@ Feature: Verify Login API
     }
     """
 
-  @negative @auth
+  @negative @auth @API10
   Scenario: Verify login with invalid credentials
     Given form field email = 'invaliduser@test.com'
     And form field password = 'invalidPassword123'
