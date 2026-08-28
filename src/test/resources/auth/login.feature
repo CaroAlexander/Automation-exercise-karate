@@ -2,25 +2,34 @@ Feature: Verify Login API
 
   Background:
     * url baseUrl
-    * path "/api/verifyLogin"
 
   @smoke @auth @API7
   Scenario: Verify login with valid credentials
-    Given form field email = 'alex.qa.test@example.com'
-    And form field password = defaultPassword
+    * def createdUser = call read('../utils/user_account_snippets.feature@CreateUser')
+    * def userEmail = createdUser.userEmail
+    * def userPassword = createdUser.userPassword
+
+  # Verify login
+    Given path '/api/verifyLogin'
+    And form field email = userEmail
+    And form field password = userPassword
     When method POST
     Then status 200
     And match response ==
-    """
-    {
-      responseCode: 200,
-      message: 'User exists!'
-    }
-    """
+  """
+  {
+    responseCode: 200,
+    message: 'User exists!'
+  }
+  """
+
+    * call read('../utils/user_post_snippets.feature@DeleteUser') { userEmail: '#(userEmail)', userPassword: '#(userPassword)' }
+
 
   @negative @auth @API8
   Scenario: Verify login without email parameter
-    Given form field password = 'VALID_PASSWORD'
+    Given path '/api/verifyLogin'
+    And form field password = 'VALID_PASSWORD'
     When method POST
     Then status 200
     And match response ==
@@ -34,8 +43,8 @@ Feature: Verify Login API
   @negative @auth @API8
   Scenario Outline: Verify login with missing parameters
     * def credentials = <credentials>
-
-    Given form fields credentials
+    Given path '/api/verifyLogin'
+    And form fields credentials
     When method POST
     Then status 200
     And match response.responseCode == 400
@@ -49,6 +58,7 @@ Feature: Verify Login API
 
   @negative @auth @API9
   Scenario: DELETE method is not supported for verify login
+    Given path '/api/verifyLogin'
     When method DELETE
     Then status 200
     And match response ==
@@ -61,8 +71,8 @@ Feature: Verify Login API
 
   @negative @auth @API10
   Scenario Outline: Verify login with invalid credentials
-
-    Given form field email = '<email>'
+    Given path '/api/verifyLogin'
+    And form field email = '<email>'
     And form field password = <password>
     When method POST
     Then status 200
