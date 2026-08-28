@@ -61,7 +61,7 @@ Feature: Users API
 """
 
     # API 12 - Delete Account
-    * call read('classpath:utils/user_post_snippets.feature@DeleteUser')
+    * call read('classpath:utils/user_account_snippets.feature@DeleteUser')
 
     # Verify deleted user cannot login
     Given path '/api/verifyLogin'
