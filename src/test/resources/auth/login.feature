@@ -23,7 +23,7 @@ Feature: Verify Login API
   }
   """
 
-    * call read('../utils/user_post_snippets.feature@DeleteUser') { userEmail: '#(userEmail)', userPassword: '#(userPassword)' }
+    * call read('../utils/user_account_snippets.feature@DeleteUser') { userEmail: '#(userEmail)', userPassword: '#(userPassword)' }
 
 
   @negative @auth @API8
