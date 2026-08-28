@@ -28,7 +28,8 @@ Feature: Reusable scenarios for post a user
     mobile_number: '8142270421'
   }
   """
-    Given url "https://automationexercise.com/api/createAccount"
+    Given url baseUrl
+    And path '/api/createAccount'
     And form fields user
     When method POST
     Then status 200
@@ -37,5 +38,21 @@ Feature: Reusable scenarios for post a user
     {
       responseCode: 201,
       message: 'User created!'
+    }
+    """
+
+  @DeleteUser
+  Scenario: Delete user
+    Given url baseUrl
+    And path '/api/deleteAccount'
+    And form field email = userEmail
+    And form field password = userPassword
+    When method DELETE
+    Then status 200
+    And match response ==
+    """
+    {
+      responseCode: 200,
+      message: 'Account deleted!'
     }
     """
